@@ -1,7 +1,9 @@
 "use client";
 
+import Image from "next/image";
 import { useRef } from "react";
 import { testimonials } from "@/lib/data";
+import { avatarUrl } from "@/lib/images";
 
 export default function TestimonialCarousel() {
   const trackRef = useRef<HTMLDivElement>(null);
@@ -25,8 +27,8 @@ export default function TestimonialCarousel() {
             <div className="pointer-events-none absolute -right-10 -top-10 h-32 w-32 rounded-full bg-radial-glow blur-xl" />
             <p className="relative font-display text-xl leading-snug text-off">“{t.quote}”</p>
             <div className="relative mt-8 flex items-center gap-3">
-              <div className="flex h-11 w-11 items-center justify-center rounded-full bg-yellow-electric/15 font-display text-sm font-semibold text-yellow-electric">
-                {t.name.split(" ").map((n) => n[0]).join("")}
+              <div className="relative h-11 w-11 overflow-hidden rounded-full border border-hairline">
+                <Image src={avatarUrl(t.name)} alt={t.name} fill sizes="44px" className="object-cover" />
               </div>
               <div>
                 <p className="text-sm font-semibold text-off">{t.name}</p>
@@ -42,14 +44,14 @@ export default function TestimonialCarousel() {
         <button
           aria-label="Previous testimonial"
           onClick={() => scrollBy(-1)}
-          className="flex h-10 w-10 items-center justify-center rounded-full border border-hairline text-off transition-colors hover:border-yellow-electric hover:text-yellow-electric"
+          className="flex h-10 w-10 items-center justify-center rounded-full border border-hairline-dark text-dark transition-colors hover:border-rust hover:text-rust"
         >
           ←
         </button>
         <button
           aria-label="Next testimonial"
           onClick={() => scrollBy(1)}
-          className="flex h-10 w-10 items-center justify-center rounded-full border border-hairline text-off transition-colors hover:border-yellow-electric hover:text-yellow-electric"
+          className="flex h-10 w-10 items-center justify-center rounded-full border border-hairline-dark text-dark transition-colors hover:border-rust hover:text-rust"
         >
           →
         </button>

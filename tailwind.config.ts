@@ -15,12 +15,19 @@ const config: Config = {
           warm: "#FFCB05",
         },
         off: "#F6F7F2",
+        cream: "#F3EFE8",
         muted: "#9BA6B5",
+        "muted-dark": "#6B6459",
         dark: "#07111F",
+        rust: {
+          DEFAULT: "#C1502E",
+          light: "#D9714F",
+        },
       },
       fontFamily: {
         display: ["var(--font-display)", "Space Grotesk", "sans-serif"],
         body: ["var(--font-body)", "Inter", "sans-serif"],
+        accent: ["var(--font-accent)", "Georgia", "serif"],
       },
       fontSize: {
         "hero-sm": ["3.5rem", { lineHeight: "1.02", letterSpacing: "-0.02em" }],
@@ -36,12 +43,13 @@ const config: Config = {
         "section-sm": "88px",
       },
       backgroundImage: {
-        "radial-glow": "radial-gradient(circle at center, rgba(255,214,0,0.30) 0%, rgba(255,214,0,0) 70%)",
+        "radial-glow": "radial-gradient(circle at center, rgba(193,80,46,0.35) 0%, rgba(193,80,46,0) 70%)",
         "navy-grad": "linear-gradient(180deg, #06142E 0%, #020A18 100%)",
         "grain": "url('/noise.svg')",
       },
       borderColor: {
         hairline: "rgba(255,255,255,0.12)",
+        "hairline-dark": "rgba(7,17,31,0.12)",
       },
       keyframes: {
         marquee: {

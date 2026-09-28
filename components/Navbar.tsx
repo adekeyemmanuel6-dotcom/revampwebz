@@ -46,7 +46,7 @@ export default function Navbar() {
           }`}
         >
           <Link href="/" data-cursor="HOME" className="font-display text-lg font-bold tracking-tight text-off">
-            Revamp<span className="text-yellow-electric">.</span>Webz
+            Revamp<span className="text-rust">.</span>Webz
           </Link>
 
           <div className="hidden items-center gap-1 md:flex">
@@ -58,7 +58,7 @@ export default function Navbar() {
                 className="group relative px-4 py-2 text-sm font-medium text-off/80 transition-colors hover:text-off"
               >
                 {l.label}
-                <span className="absolute bottom-1 left-4 right-4 h-px scale-x-0 bg-yellow-electric transition-transform duration-300 group-hover:scale-x-100" />
+                <span className="absolute bottom-1 left-4 right-4 h-px scale-x-0 bg-rust transition-transform duration-300 group-hover:scale-x-100" />
               </Link>
             ))}
           </div>

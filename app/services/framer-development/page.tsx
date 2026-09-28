@@ -20,26 +20,26 @@ export default function FramerPage() {
   const framerProjects = projects.filter((p) => p.platform === "Framer").slice(0, 3);
   return (
     <>
-      <section className="px-4 pb-section-sm pt-40 md:pt-48">
+      <section className="bg-off px-4 pb-section-sm pt-40 md:pt-48">
         <div className="container-content">
-          <SectionLabel>Framer Development</SectionLabel>
-          <h1 className="mt-6 max-w-3xl text-balance font-display text-5xl font-semibold tracking-tight text-off md:text-7xl">
-            Framer websites that move like the brands behind them.
+          <SectionLabel light>Framer Development</SectionLabel>
+          <h1 className="mt-6 max-w-3xl text-balance font-display text-5xl font-semibold tracking-tight text-dark md:text-7xl">
+            Framer websites that <span className="font-accent italic text-rust">move</span> like the brands behind them.
           </h1>
-          <p className="mt-8 max-w-xl text-lg leading-relaxed text-muted">
+          <p className="mt-8 max-w-xl text-lg leading-relaxed text-muted-dark">
             Interactive, motion-led websites for startups and ambitious brands that need to launch fast without looking like they rushed.
           </p>
         </div>
       </section>
 
-      <section className="relative overflow-hidden px-4 py-section-sm">
+      <section className="relative overflow-hidden bg-off px-4 py-section-sm">
         <div className="container-content">
           <div className="relative overflow-hidden rounded-2xl border border-hairline bg-navy-surface p-10 md:p-16">
             <div className="pointer-events-none absolute inset-0 opacity-40" style={{ backgroundImage: "linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px)", backgroundSize: "32px 32px" }} />
             <div className="relative grid grid-cols-2 gap-6 md:grid-cols-4">
               {["Canvas", "Interactions", "Components", "CMS"].map((label) => (
                 <div key={label} className="rounded-xl border border-hairline bg-navy-deep/60 p-6 text-center backdrop-blur">
-                  <p className="font-display text-sm font-semibold text-yellow-electric">{label}</p>
+                  <p className="font-display text-sm font-semibold text-rust">{label}</p>
                 </div>
               ))}
             </div>
@@ -59,10 +59,10 @@ export default function FramerPage() {
       </section>
 
       {framerProjects.length > 0 && (
-        <section className="px-4 py-section-sm">
+        <section className="bg-off px-4 py-section-sm">
           <div className="container-content">
-            <SectionLabel>Featured Framer Projects</SectionLabel>
-            <h2 className="mt-6 max-w-xl text-balance font-display text-4xl font-semibold tracking-tight text-off md:text-5xl">
+            <SectionLabel light>Featured Framer Projects</SectionLabel>
+            <h2 className="mt-6 max-w-xl text-balance font-display text-4xl font-semibold tracking-tight text-dark md:text-5xl">
               Recent work built on Framer.
             </h2>
             <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-3">

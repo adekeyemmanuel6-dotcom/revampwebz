@@ -36,30 +36,30 @@ export default function WebflowPage() {
   const webflowProjects = projects.filter((p) => p.platform === "Webflow").slice(0, 3);
   return (
     <>
-      <section className="px-4 pb-section-sm pt-40 md:pt-48">
+      <section className="bg-off px-4 pb-section-sm pt-40 md:pt-48">
         <div className="container-content">
-          <SectionLabel>Webflow Development</SectionLabel>
-          <h1 className="mt-6 max-w-3xl text-balance font-display text-5xl font-semibold tracking-tight text-off md:text-7xl">
-            Webflow websites built beyond the template.
+          <SectionLabel light>Webflow Development</SectionLabel>
+          <h1 className="mt-6 max-w-3xl text-balance font-display text-5xl font-semibold tracking-tight text-dark md:text-7xl">
+            Webflow websites built <span className="font-accent italic text-rust">beyond the template</span>.
           </h1>
-          <p className="mt-8 max-w-xl text-lg leading-relaxed text-muted">
+          <p className="mt-8 max-w-xl text-lg leading-relaxed text-muted-dark">
             Scalable, fast and conversion-focused Webflow development for marketing teams and ambitious businesses.
           </p>
         </div>
       </section>
 
-      <section className="px-4 py-section-sm">
+      <section className="bg-off px-4 py-section-sm">
         <div className="container-content grid gap-12 md:grid-cols-2 md:gap-20">
           <div>
-            <SectionLabel>Why Webflow</SectionLabel>
-            <h2 className="mt-6 max-w-md text-balance font-display text-4xl font-semibold tracking-tight text-off md:text-5xl">
+            <SectionLabel light>Why Webflow</SectionLabel>
+            <h2 className="mt-6 max-w-md text-balance font-display text-4xl font-semibold tracking-tight text-dark md:text-5xl">
               Design freedom, without losing engineering discipline.
             </h2>
           </div>
           <ul className="space-y-4">
             {capabilities.map((c) => (
-              <li key={c} className="flex items-start gap-4 border-b border-hairline pb-4 text-base text-off/85">
-                <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-yellow-electric" />
+              <li key={c} className="flex items-start gap-4 border-b border-hairline-dark pb-4 text-base text-dark/85">
+                <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-rust" />
                 {c}
               </li>
             ))}
@@ -85,10 +85,10 @@ export default function WebflowPage() {
       </section>
 
       {webflowProjects.length > 0 && (
-        <section className="px-4 py-section-sm">
+        <section className="bg-off px-4 py-section-sm">
           <div className="container-content">
-            <SectionLabel>Featured Webflow Projects</SectionLabel>
-            <h2 className="mt-6 max-w-xl text-balance font-display text-4xl font-semibold tracking-tight text-off md:text-5xl">
+            <SectionLabel light>Featured Webflow Projects</SectionLabel>
+            <h2 className="mt-6 max-w-xl text-balance font-display text-4xl font-semibold tracking-tight text-dark md:text-5xl">
               Recent work built on Webflow.
             </h2>
             <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-3">
@@ -111,7 +111,7 @@ export default function WebflowPage() {
               <details key={f.q} className="group py-6">
                 <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-display text-lg font-medium text-off">
                   {f.q}
-                  <span className="text-yellow-electric transition-transform group-open:rotate-45">+</span>
+                  <span className="text-rust transition-transform group-open:rotate-45">+</span>
                 </summary>
                 <p className="mt-4 max-w-2xl text-sm leading-relaxed text-muted">{f.a}</p>
               </details>

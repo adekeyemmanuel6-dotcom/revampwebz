@@ -50,7 +50,7 @@ export default function BeforeAfterSlider({
       onTouchMove={(e) => updateFromClientX(e.touches[0].clientX)}
     >
       <div className="absolute inset-0">{afterContent}</div>
-      <div className="absolute right-4 top-4 rounded-full bg-yellow-electric px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-dark">
+      <div className="absolute right-4 top-4 rounded-full bg-rust px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-off">
         {afterLabel}
       </div>
 
@@ -64,12 +64,12 @@ export default function BeforeAfterSlider({
       </div>
 
       <div
-        className="absolute inset-y-0 z-10 flex w-0.5 -translate-x-1/2 items-center justify-center bg-yellow-electric"
+        className="absolute inset-y-0 z-10 flex w-0.5 -translate-x-1/2 items-center justify-center bg-rust"
         style={{ left: `${pos}%` }}
       >
-        <div className="flex h-10 w-10 items-center justify-center rounded-full bg-yellow-electric text-dark shadow-lg">
+        <div className="flex h-10 w-10 items-center justify-center rounded-full bg-rust text-off shadow-lg">
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-            <path d="M6 4L2 8L6 12M10 4L14 8L10 12" stroke="#07111F" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M6 4L2 8L6 12M10 4L14 8L10 12" stroke="#F6F7F2" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
         </div>
       </div>

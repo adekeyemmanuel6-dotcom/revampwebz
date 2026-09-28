@@ -30,18 +30,18 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
-      <article className="px-4 pb-section-sm pt-40 md:pt-48">
+      <article className="bg-off px-4 pb-section-sm pt-40 md:pt-48">
         <div className="container-content mx-auto max-w-2xl">
-          <p className="text-xs uppercase tracking-[0.2em] text-muted">
-            <Link href="/insights" className="hover:text-yellow-electric">Insights</Link> / {article.category}
+          <p className="text-xs uppercase tracking-[0.2em] text-muted-dark">
+            <Link href="/insights" className="hover:text-rust">Insights</Link> / {article.category}
           </p>
-          <h1 className="mt-6 text-balance font-display text-4xl font-semibold leading-[1.1] tracking-tight text-off md:text-5xl">
+          <h1 className="mt-6 text-balance font-display text-4xl font-semibold leading-[1.1] tracking-tight text-dark md:text-5xl">
             {article.title}
           </h1>
-          <p className="mt-6 text-sm text-muted">
+          <p className="mt-6 text-sm text-muted-dark">
             {new Date(article.date).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" })}
           </p>
-          <div className="mt-12 space-y-6 border-t border-hairline pt-10 text-lg leading-relaxed text-off/85">
+          <div className="mt-12 space-y-6 border-t border-hairline-dark pt-10 text-lg leading-relaxed text-dark/85">
             {article.body.map((p, i) => (
               <p key={i}>{p}</p>
             ))}

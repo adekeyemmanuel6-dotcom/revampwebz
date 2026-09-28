@@ -7,7 +7,7 @@ export default function CTASection() {
         <div className="relative overflow-hidden rounded-[32px] border border-hairline bg-navy-deep px-8 py-20 text-center md:px-16 md:py-28">
           <div className="pointer-events-none absolute left-1/2 top-1/2 h-[420px] w-[420px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-radial-glow blur-3xl" />
           <div className="relative mx-auto max-w-2xl">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-yellow-electric">Start a Project</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-rust-light">Start a Project</p>
             <h2 className="mt-6 text-balance font-display text-4xl font-semibold tracking-tight text-off md:text-6xl">
               Your next website should feel like your next chapter.
             </h2>
@@ -19,7 +19,7 @@ export default function CTASection() {
               <a
                 href="mailto:hello@revampwebz.com"
                 data-cursor="EMAIL"
-                className="text-sm text-off/70 underline decoration-hairline underline-offset-4 transition-colors hover:text-yellow-electric"
+                className="text-sm text-off/70 underline decoration-hairline underline-offset-4 transition-colors hover:text-rust"
               >
                 hello@revampwebz.com
               </a>
