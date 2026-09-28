@@ -309,6 +309,64 @@ export const clientLogos = [
   "Fireside",
 ];
 
+export const industries = [
+  {
+    title: "Healthcare",
+    body: "Patient-acquisition websites that build trust before the first appointment request — clear service information, provider profiles and a booking path that doesn't get in the way.",
+  },
+  {
+    title: "SaaS & Technology",
+    body: "Marketing sites that carry technical credibility into a buying committee, with messaging built around personas rather than feature lists.",
+  },
+  {
+    title: "Hospitality",
+    body: "Booking-first experiences for boutique properties and portfolios, designed to compete with marketplace listings on their own turf.",
+  },
+  {
+    title: "Professional Services",
+    body: "Authority-building sites for firms that live on referrals — practice-area clarity, credibility signals and technical SEO built in from day one.",
+  },
+  {
+    title: "Venture-Backed Startups",
+    body: "Fast, motion-led launch sites that establish category credibility before a product is fully public.",
+  },
+];
+
+export const faqs = [
+  {
+    title: "How long does a typical project take?",
+    body: "Most engagements run 4–8 weeks depending on scope, platform and CMS complexity. Framer launch sites tend toward the shorter end; larger Webflow builds with custom CMS architecture toward the longer end.",
+  },
+  {
+    title: "Do you work in Webflow or Framer?",
+    body: "Both. We choose the platform based on your content model and growth stage — Webflow for CMS-heavy, scalable marketing sites; Framer for motion-led startup and launch sites.",
+  },
+  {
+    title: "Will my team be able to update the site after launch?",
+    body: "Yes. Every build ships with a CMS architecture designed around how your team actually creates content, plus documentation so you're not dependent on us for routine updates.",
+  },
+  {
+    title: "Do you handle migrations from our existing site?",
+    body: "Yes, including content migration planning to preserve SEO equity, URL structure and redirects during the move.",
+  },
+  {
+    title: "What's included in a typical engagement?",
+    body: "Strategy, UX/UI design, Webflow or Framer development, and a refinement pass covering responsive QA, performance and technical SEO — under one connected process, not separate handoffs.",
+  },
+  {
+    title: "How much does a project cost?",
+    body: "Most engagements fall between $5,000 and $50,000+ depending on scope. We'll scope a fixed quote after an initial conversation about what you're building.",
+  },
+  {
+    title: "Do you offer ongoing support after launch?",
+    body: "Yes — ongoing support and iterative CRO work is available as a service for teams that want continued improvement after launch.",
+  },
+  {
+    title: "Can you work with our existing brand guidelines?",
+    body: "Absolutely. We can design within an existing design system, or help evolve one that hasn't kept pace with where your business is now.",
+  },
+];
+
 export const services = [
   {
     number: "01",

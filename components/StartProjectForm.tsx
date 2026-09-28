@@ -76,7 +76,7 @@ export default function StartProjectForm() {
   if (status === "success") {
     return (
       <div className="rounded-2xl border border-hairline bg-navy-surface p-12 text-center">
-        <span className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-yellow-electric text-dark">✓</span>
+        <span className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-rust text-off">✓</span>
         <h3 className="mt-6 font-display text-3xl font-semibold text-off">Message received.</h3>
         <p className="mx-auto mt-4 max-w-sm text-base text-muted">
           We&apos;ll review what you&apos;ve shared and follow up within one business day.
@@ -89,7 +89,7 @@ export default function StartProjectForm() {
     <div className="rounded-2xl border border-hairline bg-navy-surface p-6 md:p-10">
       <div className="mb-10 flex items-center gap-2">
         {Array.from({ length: TOTAL_STEPS }).map((_, i) => (
-          <div key={i} className={cn("h-1 flex-1 rounded-full", i < step ? "bg-yellow-electric" : "bg-white/10")} />
+          <div key={i} className={cn("h-1 flex-1 rounded-full", i < step ? "bg-rust" : "bg-white/10")} />
         ))}
       </div>
 
@@ -113,7 +113,7 @@ export default function StartProjectForm() {
                     onClick={() => update("need", n)}
                     className={cn(
                       "rounded-xl border px-5 py-4 text-left text-sm font-medium transition-colors",
-                      form.need === n ? "border-yellow-electric bg-yellow-electric/10 text-off" : "border-hairline text-off/70 hover:border-off/40"
+                      form.need === n ? "border-rust bg-rust/10 text-off" : "border-hairline text-off/70 hover:border-off/40"
                     )}
                   >
                     {n}
@@ -157,7 +157,7 @@ export default function StartProjectForm() {
                     onClick={() => update("budget", b)}
                     className={cn(
                       "rounded-xl border px-5 py-4 text-left text-sm font-medium transition-colors",
-                      form.budget === b ? "border-yellow-electric bg-yellow-electric/10 text-off" : "border-hairline text-off/70 hover:border-off/40"
+                      form.budget === b ? "border-rust bg-rust/10 text-off" : "border-hairline text-off/70 hover:border-off/40"
                     )}
                   >
                     {b}
@@ -179,7 +179,7 @@ export default function StartProjectForm() {
                     onClick={() => update("timeline", t)}
                     className={cn(
                       "rounded-xl border px-5 py-4 text-left text-sm font-medium transition-colors",
-                      form.timeline === t ? "border-yellow-electric bg-yellow-electric/10 text-off" : "border-hairline text-off/70 hover:border-off/40"
+                      form.timeline === t ? "border-rust bg-rust/10 text-off" : "border-hairline text-off/70 hover:border-off/40"
                     )}
                   >
                     {t}
@@ -198,7 +198,7 @@ export default function StartProjectForm() {
                 onChange={(e) => update("details", e.target.value)}
                 rows={6}
                 placeholder="Share as much or as little as you'd like."
-                className="mt-8 w-full rounded-xl border border-hairline bg-navy-deep p-4 text-sm text-off placeholder:text-muted focus:border-yellow-electric focus:outline-none"
+                className="mt-8 w-full rounded-xl border border-hairline bg-navy-deep p-4 text-sm text-off placeholder:text-muted focus:border-rust focus:outline-none"
               />
               {error && <p className="mt-3 text-sm text-red-400">{error}</p>}
             </div>
@@ -221,7 +221,7 @@ export default function StartProjectForm() {
             type="button"
             disabled={!canContinue()}
             onClick={next}
-            className="rounded-full bg-yellow-electric px-7 py-3 text-sm font-semibold text-dark transition-opacity disabled:opacity-30"
+            className="rounded-full bg-rust px-7 py-3 text-sm font-semibold text-off transition-opacity disabled:opacity-30"
           >
             Continue →
           </button>
@@ -230,7 +230,7 @@ export default function StartProjectForm() {
             type="button"
             disabled={status === "submitting"}
             onClick={submit}
-            className="rounded-full bg-yellow-electric px-7 py-3 text-sm font-semibold text-dark transition-opacity disabled:opacity-60"
+            className="rounded-full bg-rust px-7 py-3 text-sm font-semibold text-off transition-opacity disabled:opacity-60"
           >
             {status === "submitting" ? "Sending…" : "Send Project →"}
           </button>
@@ -262,7 +262,7 @@ function Field({
         value={value}
         placeholder={placeholder}
         onChange={(e) => onChange(e.target.value)}
-        className="mt-2 w-full rounded-xl border border-hairline bg-navy-deep p-3.5 text-sm text-off placeholder:text-muted/60 focus:border-yellow-electric focus:outline-none"
+        className="mt-2 w-full rounded-xl border border-hairline bg-navy-deep p-3.5 text-sm text-off placeholder:text-muted/60 focus:border-rust focus:outline-none"
       />
     </label>
   );

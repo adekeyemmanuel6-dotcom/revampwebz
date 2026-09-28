@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Space_Grotesk } from "next/font/google";
+import { Inter, Space_Grotesk, Instrument_Serif } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -17,6 +17,14 @@ const display = Space_Grotesk({
   variable: "--font-display",
   display: "swap",
   weight: ["500", "600", "700"],
+});
+
+const accent = Instrument_Serif({
+  subsets: ["latin"],
+  variable: "--font-accent",
+  display: "swap",
+  weight: ["400"],
+  style: ["italic", "normal"],
 });
 
 const siteUrl = "https://revampwebz.com";
@@ -77,8 +85,8 @@ export default function RootLayout({
   };
 
   return (
-    <html lang="en" className={`${inter.variable} ${display.variable}`}>
-      <body className="bg-navy text-off font-body">
+    <html lang="en" className={`${inter.variable} ${display.variable} ${accent.variable}`}>
+      <body className="bg-off text-dark font-body">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }}

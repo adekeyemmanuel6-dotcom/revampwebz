@@ -44,14 +44,14 @@ export default function TestimonialCarousel() {
         <button
           aria-label="Previous testimonial"
           onClick={() => scrollBy(-1)}
-          className="flex h-10 w-10 items-center justify-center rounded-full border border-hairline text-off transition-colors hover:border-yellow-electric hover:text-yellow-electric"
+          className="flex h-10 w-10 items-center justify-center rounded-full border border-hairline-dark text-dark transition-colors hover:border-rust hover:text-rust"
         >
           ←
         </button>
         <button
           aria-label="Next testimonial"
           onClick={() => scrollBy(1)}
-          className="flex h-10 w-10 items-center justify-center rounded-full border border-hairline text-off transition-colors hover:border-yellow-electric hover:text-yellow-electric"
+          className="flex h-10 w-10 items-center justify-center rounded-full border border-hairline-dark text-dark transition-colors hover:border-rust hover:text-rust"
         >
           →
         </button>

@@ -36,7 +36,7 @@ export default function CustomCursor() {
         const type = el.getAttribute("data-cursor");
         dot.style.width = "64px";
         dot.style.height = "64px";
-        dot.style.backgroundColor = "#FFD600";
+        dot.style.backgroundColor = "#C1502E";
         label.textContent = type || "";
         label.style.opacity = "1";
       } else {

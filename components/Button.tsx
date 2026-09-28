@@ -31,9 +31,9 @@ export default function Button({ href, children, variant = "primary", className,
     "btn-magnetic group relative inline-flex items-center justify-center rounded-full px-7 py-3.5 text-sm font-semibold tracking-wide transition-colors duration-300 whitespace-nowrap";
 
   const styles = {
-    primary: "bg-yellow-electric text-dark hover:bg-yellow-warm",
-    secondary: "border border-hairline text-off hover:border-yellow-electric hover:text-yellow-electric",
-    ghost: "text-off hover:text-yellow-electric",
+    primary: "bg-rust text-off hover:bg-rust-light",
+    secondary: "border border-hairline text-off hover:border-rust hover:text-rust-light",
+    ghost: "text-off hover:text-rust-light",
   };
 
   return (

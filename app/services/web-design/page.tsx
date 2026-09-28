@@ -17,7 +17,7 @@ const process = [
 ];
 
 const tokens = [
-  { label: "Color", swatch: "#FFD600" },
+  { label: "Color", swatch: "#C1502E" },
   { label: "Color", swatch: "#06142E" },
   { label: "Color", swatch: "#F6F7F2" },
   { label: "Color", swatch: "#9BA6B5" },
@@ -26,25 +26,25 @@ const tokens = [
 export default function WebDesignPage() {
   return (
     <>
-      <section className="px-4 pb-section-sm pt-40 md:pt-48">
+      <section className="bg-off px-4 pb-section-sm pt-40 md:pt-48">
         <div className="container-content">
-          <SectionLabel>UX/UI & Web Design</SectionLabel>
-          <h1 className="mt-6 max-w-3xl text-balance font-display text-5xl font-semibold tracking-tight text-off md:text-7xl">
-            Design people remember. Journeys people understand.
+          <SectionLabel light>UX/UI & Web Design</SectionLabel>
+          <h1 className="mt-6 max-w-3xl text-balance font-display text-5xl font-semibold tracking-tight text-dark md:text-7xl">
+            Design people <span className="font-accent italic text-rust">remember</span>. Journeys people understand.
           </h1>
-          <p className="mt-8 max-w-xl text-lg leading-relaxed text-muted">
+          <p className="mt-8 max-w-xl text-lg leading-relaxed text-muted-dark">
             Discovery, wireframing, UX, UI, design systems, prototyping and motion direction — built to work as one connected system.
           </p>
         </div>
       </section>
 
-      <section className="px-4 py-section-sm">
+      <section className="bg-off px-4 py-section-sm">
         <div className="container-content grid grid-cols-1 gap-6 md:grid-cols-3">
           {process.map((p, i) => (
-            <div key={p.title} className="rounded-2xl border border-hairline p-8">
-              <span className="font-display text-sm font-bold text-yellow-electric">0{i + 1}</span>
-              <p className="mt-4 font-display text-xl font-semibold text-off">{p.title}</p>
-              <p className="mt-3 text-sm leading-relaxed text-muted">{p.body}</p>
+            <div key={p.title} className="rounded-2xl border border-hairline-dark p-8">
+              <span className="font-display text-sm font-bold text-rust">0{i + 1}</span>
+              <p className="mt-4 font-display text-xl font-semibold text-dark">{p.title}</p>
+              <p className="mt-3 text-sm leading-relaxed text-muted-dark">{p.body}</p>
             </div>
           ))}
         </div>

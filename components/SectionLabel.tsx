@@ -13,7 +13,7 @@ export default function SectionLabel({
         light ? "text-dark/60" : "text-muted"
       } ${className || ""}`}
     >
-      <span className="h-[6px] w-[6px] rounded-full bg-yellow-electric" />
+      <span className="h-[6px] w-[6px] rounded-full bg-rust" />
       {children}
     </div>
   );

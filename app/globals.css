@@ -5,6 +5,7 @@
 :root {
   --font-display: "Space Grotesk", "Funnel Display", "KMR Waldenburg Buch", sans-serif;
   --font-body: "Inter", sans-serif;
+  --font-accent: "Instrument Serif", Georgia, serif;
 }
 
 * {
@@ -13,7 +14,7 @@
 
 html {
   scroll-behavior: smooth;
-  background: #06142e;
+  background: #f6f7f2;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -31,16 +32,16 @@ html {
 }
 
 body {
-  background-color: #06142e;
-  color: #f6f7f2;
+  background-color: #f6f7f2;
+  color: #07111f;
   font-family: var(--font-body);
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
 }
 
 ::selection {
-  background: #ffd600;
-  color: #07111f;
+  background: #c1502e;
+  color: #f6f7f2;
 }
 
 a {
@@ -51,6 +52,12 @@ a {
   font-family: var(--font-display);
 }
 
+.font-accent {
+  font-family: var(--font-accent);
+  font-style: italic;
+  font-weight: 400;
+}
+
 /* Custom cursor */
 .rw-cursor {
   position: fixed;
@@ -59,7 +66,7 @@ a {
   width: 16px;
   height: 16px;
   border-radius: 999px;
-  background: #ffd600;
+  background: #c1502e;
   pointer-events: none;
   z-index: 9999;
   mix-blend-mode: difference;
