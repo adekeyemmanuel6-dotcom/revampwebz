@@ -84,7 +84,7 @@ export default function CaseStudyPage({ params }: { params: { slug: string } }) 
           </div>
 
           <div className="mt-14 aspect-[16/9] w-full overflow-hidden rounded-2xl border border-hairline">
-            <MockBrowser variant="after" title={project.name} />
+            <MockBrowser variant="after" title={project.name} seed={project.slug} />
           </div>
         </div>
       </section>
@@ -128,8 +128,8 @@ export default function CaseStudyPage({ params }: { params: { slug: string } }) 
           </h2>
           <div className="mt-10">
             <BeforeAfterSlider
-              beforeContent={<MockBrowser variant="before" title={`${project.client} — Before`} />}
-              afterContent={<MockBrowser variant="after" title={`${project.client} — After`} />}
+              beforeContent={<MockBrowser variant="before" title={`${project.client} — Before`} seed={project.slug} />}
+              afterContent={<MockBrowser variant="after" title={`${project.client} — After`} seed={project.slug} />}
             />
           </div>
         </div>
@@ -164,10 +164,10 @@ export default function CaseStudyPage({ params }: { params: { slug: string } }) 
           </h2>
           <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-3">
             <div className="md:col-span-2 aspect-[16/9] overflow-hidden rounded-2xl border border-hairline">
-              <MockBrowser variant="after" title="Desktop" />
+              <MockBrowser variant="after" title="Desktop" seed={`${project.slug}-desktop`} />
             </div>
             <div className="aspect-[9/16] overflow-hidden rounded-2xl border border-hairline">
-              <MockBrowser variant="after" title="Mobile" />
+              <MockBrowser variant="after" title="Mobile" seed={`${project.slug}-mobile`} />
             </div>
           </div>
         </div>

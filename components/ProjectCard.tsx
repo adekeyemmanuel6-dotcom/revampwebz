@@ -11,7 +11,7 @@ export default function ProjectCard({ project, size = "default" }: { project: Pr
     >
       <div className={`relative overflow-hidden ${size === "large" ? "aspect-[16/10]" : "aspect-[4/3]"}`}>
         <div className="h-full w-full scale-100 transition-transform duration-700 ease-out group-hover:scale-[1.04]">
-          <MockBrowser variant="after" title={project.name} />
+          <MockBrowser variant="after" title={project.name} seed={project.slug} />
         </div>
         <div className="pointer-events-none absolute inset-0 opacity-0 ring-1 ring-inset ring-yellow-electric/60 transition-opacity duration-500 group-hover:opacity-100" />
       </div>

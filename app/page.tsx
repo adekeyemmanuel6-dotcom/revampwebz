@@ -186,8 +186,8 @@ export default function Home() {
           </p>
           <div className="mx-auto mt-12 max-w-4xl">
             <BeforeAfterSlider
-              beforeContent={<MockBrowser variant="before" title="Before" />}
-              afterContent={<MockBrowser variant="after" title="After" />}
+              beforeContent={<MockBrowser variant="before" title="Before" seed="homepage-transform" />}
+              afterContent={<MockBrowser variant="after" title="After" seed="homepage-transform" />}
             />
           </div>
         </div>
